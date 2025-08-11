@@ -9,8 +9,8 @@ class Solution {
 
         for(int i=0; i < 31; i++){
             if((n & (1 << i)) != 0 ){
-                // powers.add((long) (1 << i));
-                powers.add((long)Math.pow(2,i));
+                powers.add((long) (1 << i));
+                // powers.add((long)Math.pow(2,i));
             }
         }
 
