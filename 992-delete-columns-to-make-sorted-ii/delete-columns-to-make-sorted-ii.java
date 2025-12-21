@@ -4,7 +4,7 @@ class Solution {
         int m = strs[0].length();
 
         int deletions = 0;
-        //sorted[i] neabs strs[i] < strs[i+1] already confirmed
+        //sorted[i] means strs[i] < strs[i+1] already confirmed
         boolean[] sorted = new boolean[n-1];
         
         for(int col=0; col < m; col++){
