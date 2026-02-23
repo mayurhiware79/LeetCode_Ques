@@ -10,6 +10,7 @@ class Solution {
             set.add(s.substring(i,i+k));
         }
 
-        return set.size() == Math.pow(2,k);
+        // return set.size() == Math.pow(2,k);
+        return set.size() == (1 << k);
     }
 }
