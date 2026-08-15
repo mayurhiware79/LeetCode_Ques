@@ -10,12 +10,15 @@ class Solution {
         //gen all substrings
         for(int i=0; i<n;i++){
 
+            //cnt freq of char
             int freq[]=new int[26];
+
             for(int j=i;j<n;j++){
 
                 char ch = s.charAt(j);
                 freq[ch - 'a']++;
 
+                //if no. of 2 freq char > 2
                 if(freq[ch - 'a'] > 2){
                     break;
                 }
