@@ -1,7 +1,12 @@
+// Brute Force : use Binary Search
+// Optimal : use HASHSET
+
+
+// my appraoch
 class Solution {
 
     public int missingMultiple(int[] nums, int k) {
-        // my appraoch
+        
         // sort nums array
         Arrays.sort(nums);
 
@@ -12,6 +17,7 @@ class Solution {
         //         return i;
         //     }
         // }
+
         int i = k;
 
         while (true) {
