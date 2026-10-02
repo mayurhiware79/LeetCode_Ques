@@ -1,3 +1,6 @@
+// OPTIMAL sathi - count open & close brackets n apply security check 
+// open < n and close < open
+
 class Solution {
     public List<String> generateParenthesis(int n) {
         List<String> result = new ArrayList<>();
@@ -34,6 +37,8 @@ class Solution {
         generate(curr, n, length + 1, result);
     }
 
+    // isvalid() No need for OPTIMAL
+    
     private boolean isValid(String str) {
         int sum = 0;
 
